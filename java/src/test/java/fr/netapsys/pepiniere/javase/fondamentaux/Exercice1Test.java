@@ -12,7 +12,7 @@ import org.junit.Test;
 public class Exercice1Test {
 
 	/**
-	 * Mettre à jour la méthode roar en ajoutant aux object roar1 et roar2 3 points
+	 * Mettre à jour la méthode roar en ajoutant aux objets roar1 et roar2 3 points
 	 * d'exclamations tout en validant les tests.
 	 */
 	@Test
@@ -30,7 +30,7 @@ public class Exercice1Test {
 	 * Ecrire la méthode deuxRugissements pour valider le test.
 	 */
 	@Test
-	public void testDeuxRugissement() {
+	public void testDeuxRugissements() {
 		// Préparation
 		final String roar1 = "roar";
 		final StringBuilder roar2 = new StringBuilder("roar");
@@ -41,7 +41,7 @@ public class Exercice1Test {
 	}
 
 	/**
-	 * Ecrire la méthode deuxRugissements pour valider le test.
+	 * Valider les assertions.
 	 */
 	@Test
 	public void testReferences() {

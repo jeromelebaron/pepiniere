@@ -16,9 +16,21 @@ public class Exercice1 {
 	 * @param roar2 le second rugissement.
 	 */
 	public void rugissement(final String roar1, final StringBuilder roar2) {
-		// TODO Auto-generated method stub
+		roar1.concat("!!!");
+		roar2.append("!!!");
 	}
 
+	/**
+	 * Pour rugir encore plus.
+	 * @param roar1 le premier rugissement.
+	 * @param roar2 le second rugissement.
+	 */
+	public String rugissementDeux(String roar1, final StringBuilder roar2) {
+		roar2.append("!!!");
+		roar1 += "!!!";
+		return roar1;
+	}
+	
 	public int getNumero() {
 		return numero;
 	}

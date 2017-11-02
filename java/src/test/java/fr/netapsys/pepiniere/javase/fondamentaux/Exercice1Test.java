@@ -23,7 +23,7 @@ public class Exercice1Test {
 		new Exercice1().rugissement(roar1, roar2);
 		// Vérifications
 		Assert.assertEquals("Vérification de la valeur de la chaine roar1", "roar", roar1);
-		Assert.assertEquals("Vérification de la valeur de la chaine roar2", "roar!!!", roar2);
+		Assert.assertEquals("Vérification de la valeur de la chaine roar2", "roar!!!", String.valueOf(roar2));
 	}
 
 	/**
@@ -32,8 +32,8 @@ public class Exercice1Test {
 	@Test
 	public void testDeuxRugissements() {
 		// Préparation
-		final String roar1 = "roar";
-		final StringBuilder roar2 = new StringBuilder("roar");
+		String roar1 = "roar";
+		StringBuilder roar2 = new StringBuilder("roar");
 		// TODO méthode à écrire
 		// Vérifications
 		Assert.assertEquals("Vérification de la valeur de la chaine roar1", "roar!!!", roar1);

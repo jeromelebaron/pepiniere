@@ -37,7 +37,7 @@ public class Exercice1Test {
 		// TODO méthode à écrire
 		// Vérifications
 		Assert.assertEquals("Vérification de la valeur de la chaine roar1", "roar!!!", roar1);
-		Assert.assertEquals("Vérification de la valeur de la chaine roar2", "roar!!!", roar2);
+		Assert.assertEquals("Vérification de la valeur de la chaine roar2", "roar!!!", String.valueOf(roar2));
 	}
 
 	/**

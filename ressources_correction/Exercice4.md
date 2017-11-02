@@ -1,0 +1,5 @@
+- créer le fichier Pepiniere.java
+- aller dans le dossier pepiniere
+- en ligne de commande faire "javac Pepiniere.java"
+- aller dans le dossier ressources_corrections
+- en ligne de commande faire "java pepiniere.Pepiniere Jerome"

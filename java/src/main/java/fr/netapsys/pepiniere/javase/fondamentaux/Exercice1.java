@@ -16,7 +16,11 @@ public class Exercice1 {
 	 * @param roar2 le second rugissement.
 	 */
 	public void rugissement(final String roar1, final StringBuilder roar2) {
-		// TODO Auto-generated method stub
+		roar2.append("!!!");
+	}
+
+	public String rugissement2(String roar1, StringBuilder roar2) {
+		return roar2.append("!!!").toString();
 	}
 
 	public int getNumero() {
@@ -26,5 +30,4 @@ public class Exercice1 {
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
-
 }

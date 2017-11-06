@@ -23,7 +23,7 @@ public class Exercice1Test {
 		new Exercice1().rugissement(roar1, roar2);
 		// Vérifications
 		Assert.assertEquals("Vérification de la valeur de la chaine roar1", "roar", roar1);
-		Assert.assertEquals("Vérification de la valeur de la chaine roar2", "roar!!!", roar2);
+		Assert.assertEquals("Vérification de la valeur de la chaine roar2", "roar!!!", String.valueOf(roar2));
 	}
 
 	/**
@@ -32,12 +32,14 @@ public class Exercice1Test {
 	@Test
 	public void testDeuxRugissements() {
 		// Préparation
-		final String roar1 = "roar";
+		/*final*/ String roar1 = "roar";
 		final StringBuilder roar2 = new StringBuilder("roar");
-		// TODO méthode à écrire
+
+		roar1 = new Exercice1().rugissement2(roar1, roar2);
+
 		// Vérifications
 		Assert.assertEquals("Vérification de la valeur de la chaine roar1", "roar!!!", roar1);
-		Assert.assertEquals("Vérification de la valeur de la chaine roar2", "roar!!!", roar2);
+		Assert.assertEquals("Vérification de la valeur de la chaine roar2", "roar!!!", String.valueOf(roar2));
 	}
 
 	/**
@@ -48,11 +50,17 @@ public class Exercice1Test {
 		Exercice1 un = new Exercice1();
 		un.setNumero(1);
 		Exercice1 deux = new Exercice1();
+		deux.setNumero(un.getNumero());
 		Assert.assertTrue("Sans utiliser le setter de deux, vérifier l'égalité", un.getNumero() == deux.getNumero());
+		deux = un = null;
 		Assert.assertNull("Vérifier la condition", deux);
 		Exercice1 trois = new Exercice1();
+		trois = un;
 		Assert.assertNull("Réassigner trois à une référence existante pour vérifier l'égalité", trois);
 		Exercice1 quatre = new Exercice1();
+		quatre.setNumero(4);
+		trois = quatre;
+		un = deux = trois;
 		Assert.assertTrue("En manipulant la référence quatre, vérifier la condition", un.getNumero() == 4);
 	}
 }

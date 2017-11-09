@@ -16,7 +16,11 @@ public class Exercice1 {
 	 * @param roar2 le second rugissement.
 	 */
 	public void rugissement(final String roar1, final StringBuilder roar2) {
-		// TODO Auto-generated method stub
+		String roar = roar1;
+		String str = "!!!";
+		roar.concat(str);
+		StringBuilder roa = roar2.append(str);
+		System.out.println(roar);
 	}
 
 	public int getNumero() {

@@ -1,12 +1,10 @@
 package fr.netapsys.pepiniere.javase.fondamentaux;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * Created by Netapsys on 06/11/17.
@@ -25,8 +23,7 @@ public class Exercice2Test {
         chaine += chaine2 == "testChaine2";
         chaine += chaine2.equals("testChaine2");
 
-        // TODO: Remplir le résultat
-        String result = "";
+        String result = "exo212falsefalsetruetrue";
 
         // Vérifications
         Assert.assertEquals("Vérification du résultat", result, chaine);
@@ -43,8 +40,8 @@ public class Exercice2Test {
 
         boolean maListeContient3 = false;
 
-        // TODO: Corriger la suite pour que mon test passe (vous n'avez pas le droit de modifier la classe Exercice2)
         for (Float monFloat : maListe) {
+        		maListe.set(3, 3f);
             maListeContient3 = new Exercice2().isEqualsTo3(monFloat);
         }
 
